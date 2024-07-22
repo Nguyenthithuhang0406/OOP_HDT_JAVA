@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class HoaDon {
@@ -24,6 +27,13 @@ public class HoaDon {
         }
     }
 
+    public double tinhTongTien(){
+        double tt = 0;
+        for(int i = 0; i < soMatHang; i++){
+            tt += dsHang[i].tinhTongTien();
+        }
+        return  tt;
+    }
     public void inDuLieu(){
         System.out.printf("%-10s %-10s" , soHD , ngayHD.inNgay() , "\n");
         System.out.println();
@@ -35,5 +45,26 @@ public class HoaDon {
             dsHang[i].inDuLieu();
             System.out.println();
         }
+    }
+
+    public void sapXep(){
+        Comparator c = new Comparator<Hang>() {
+            @Override
+            public int compare(Hang o1, Hang o2) {
+                return Double.compare(o1.tinhTongTien(), o2.tinhTongTien());
+            }
+        };
+        Arrays.sort(dsHang, c);
+    }
+
+    public Hang timMax(){
+        Comparator c = new Comparator<Hang>() {
+            @Override
+            public int compare(Hang o1, Hang o2) {
+                return Double.compare(o1.getSoLuong(), o2.getSoLuong());
+            }
+        };
+        Hang h = Collections.max(Arrays.asList(dsHang), c);
+        return h;
     }
 }
