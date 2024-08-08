@@ -34,7 +34,7 @@ public class main {
 
     public static  void inThongTin(){
         System.out.println("Hoc vien do hoa:");
-//        System.out.printf("%-30s %-30s %-30s %-30s %-20s %-20s %-20s", "Ho ten", "Dia Chi", "Loai Chuong Trinh", "Loai uu tien", "So buoi", "don gia ", "hoc phi");
+        System.out.printf("%-30s %-30s %-30s %-30s %-20s %-20s %-20s \n", "Ho ten", "Dia Chi", "Loai Chuong Trinh", "Loai uu tien", "So buoi", "don gia ", "hoc phi");
         for( HocVien hv : listHv){
             if(hv instanceof HocVienDH){
                 hv.inThongTin();
@@ -42,7 +42,7 @@ public class main {
             }
         }
         System.out.println("Hoc vien lap trinh:");
-//        System.out.printf("%-30s %-30s %-30s %-30s %-20s %-20s %-20s", "Ho ten", "Dia Chi", "Loai Chuong Trinh", "Loai uu tien", "So buoi", "don gia ", "hoc phi");
+        System.out.printf("%-30s %-30s %-30s %-30s %-20s %-20s %-20s \n", "Ho ten", "Dia Chi", "Loai Chuong Trinh", "Loai uu tien", "So buoi", "don gia ", "hoc phi");
         for( HocVien hv : listHv){
             if(hv instanceof HocVienLT){
                 hv.inThongTin();

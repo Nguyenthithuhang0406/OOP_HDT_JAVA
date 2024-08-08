@@ -11,7 +11,7 @@ public class HocVienDH extends  HocVien{
     }
 
     public HocVienDH() {
-
+        super(null, null, "Do hoa", 0);
     }
 
     @Override

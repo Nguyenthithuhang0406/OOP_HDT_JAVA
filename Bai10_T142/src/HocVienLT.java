@@ -10,6 +10,8 @@ public class HocVienLT extends HocVien{
     }
 
     public HocVienLT() {
+
+        super(null, null, "Lap trinh", 0);
     }
 
     @Override
