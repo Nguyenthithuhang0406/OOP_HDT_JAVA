@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bai10_T142/Bai10_T142.iml" filepath="$PROJECT_DIR$/Bai10_T142/Bai10_T142.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bai11_T144/Bai11_T144.iml" filepath="$PROJECT_DIR$/Bai11_T144/Bai11_T144.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bai3_Trang136/Bai3_Trang136.iml" filepath="$PROJECT_DIR$/Bai3_Trang136/Bai3_Trang136.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bai4_Trang137/Bai4_Trang137.iml" filepath="$PROJECT_DIR$/Bai4_Trang137/Bai4_Trang137.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bai6_Trang140/Bai6_Trang140.iml" filepath="$PROJECT_DIR$/Bai6_Trang140/Bai6_Trang140.iml" />
@@ -13,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/OOP.iml" filepath="$PROJECT_DIR$/.idea/OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/QLNV/QLNV.iml" filepath="$PROJECT_DIR$/QLNV/QLNV.iml" />
       <module fileurl="file://$PROJECT_DIR$/TaiLieu/TaiLieu.iml" filepath="$PROJECT_DIR$/TaiLieu/TaiLieu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tx1_LaoDong/tx1.iml" filepath="$PROJECT_DIR$/tx1_LaoDong/tx1.iml" />
     </modules>
   </component>
 </project>
