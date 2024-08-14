@@ -1,16 +1,28 @@
 public class LaoDong {
     private String maLD, tenLD;
     private int soNgayCong;
-    final int luongTheoNgay = 100000;
+    final int donGiaNgayCong = 100000;
     private LoaiLD loaiLD;
 
     public LaoDong(String maLD, String tenLD, int soNgayCong, LoaiLD loaiLD) {
-        this.maLD = maLD;
-        this.tenLD = tenLD;
-        this.soNgayCong = soNgayCong;
-        this.loaiLD = loaiLD;
+        try {
+            this.maLD = maLD;
+            this.tenLD = tenLD;
+//            this.soNgayCong = soNgayCong;
+            setNgayCong(soNgayCong);
+            this.loaiLD = loaiLD;
+        }catch (Exception ex){
+            System.out.println("loi:" + ex.toString());
+        }
     }
 
+    public void setNgayCong(int  soNC) throws Exception{
+        if(soNC < 0){
+            soNC = 0;
+            throw  new Exception("so ngay cong khong duoc nho hon 0!");
+        }
+        this.soNgayCong = soNC;
+    }
     public LaoDong() {
     }
 
@@ -42,14 +54,14 @@ public class LaoDong {
     }
 
     public int tinhLuong(){
-        return soNgayCong * luongTheoNgay + tinhThuong();
+        return soNgayCong * donGiaNgayCong + tinhThuong();
     }
 
     public void inTieuDe(){
-        System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s \n", "ma lao dong", "ten lao dong", "so ngay cong", "luong theo ngay", "thuong", "luong");
+        System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s \n", "ma lao dong", "ten lao dong", "so ngay cong", "donGiaNgayCong", "thuong", "luong");
     }
 
     public void inDuLieu(){
-        System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s \n", maLD, tenLD, soNgayCong, luongTheoNgay, tinhThuong(), tinhLuong());
+        System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s \n", maLD, getTenLD(), soNgayCong, donGiaNgayCong, tinhThuong(), tinhLuong());
     }
 }

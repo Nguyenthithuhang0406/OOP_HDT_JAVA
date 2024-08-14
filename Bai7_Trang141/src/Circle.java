@@ -1,8 +1,11 @@
-public abstract class Circle implements IGeometricObject {
+public abstract class Circle implements IGeometricObject{
     protected double radius = 1.0;
 
     public Circle(double radius) {
         this.radius = radius;
+    }
+
+    public Circle() {
     }
 
     public double getRadius() {
@@ -18,4 +21,5 @@ public abstract class Circle implements IGeometricObject {
     public double getArea() {
         return radius * radius * 3.14;
     }
+
 }

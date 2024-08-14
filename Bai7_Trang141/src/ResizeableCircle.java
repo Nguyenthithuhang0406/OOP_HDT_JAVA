@@ -1,11 +1,10 @@
-//public class ResizeableCircle extends Circle implements IResizeable {
-//    @Override
-//    public double resize(int persent) {
-//        return super.getRadius() * persent / 100;
-//    }
-//
-//    public double ResizeableCircle( double radius){
-//
-//    }
-//
-//}
+public class ResizeableCircle extends Circle implements IResizeable{
+    public ResizeableCircle(double radius) {
+        super(radius);
+    }
+    @Override
+    public double resize(int persent) {
+        return super.radius * (1 + persent / 100.0);
+    }
+
+}
