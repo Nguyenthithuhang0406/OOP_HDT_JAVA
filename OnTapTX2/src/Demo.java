@@ -55,7 +55,11 @@ public class Demo {
             }
         }
         if(kt == false){
-            mh0.outputData();
+            for(MonHoc mh : listMH){
+                if(mh.getSoTC() == mh0.getSoTC() && mh.getLoaiMon() == LoaiMon.ChuyenNganh){
+                    mh.outputData();
+                }
+            }
         }
     }
     public static void main(String[] args) {
